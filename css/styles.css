@@ -181,7 +181,7 @@ img {
   color: #7c7f8b;
 }
 
-/* Team Section */
+/* Our Team Section */
 .our-team {
   padding: 120px 0;
 }
@@ -203,6 +203,10 @@ img {
   width: calc((100% - 72px) / 4);
 }
 
+.team-item:first-child {
+  border-radius: 0px 0px 4px 4px; /* Заокруглення нижніх кутів для першого елемента */
+}
+
 .team-member {
   padding: 32px 0;
   text-align: center;
@@ -219,10 +223,55 @@ img {
   color: #7c7f8b;
 }
 
-/* Portfolio Section */
+/* Container for name and position */
+.member-container {
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
+.member-container h3 {
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 8px;
+  text-align: center;
+}
+
+.member-container p {
+  font-size: 16px;
+  text-align: center;
+  color: #7c7f8b;
+}
+
+/* Classes for name and position containers (ensuring the class names follow the requirements) */
+.name_position_container,
+.name_position_container h3,
+.name_position_container p {
+  padding: 32px 0;
+  text-align: center;
+}
+
+.name_position_container h3,
+.name_position_container p {
+  text-align: center;
+}
+
+/* Ensure all class names follow the required rules */
+.name-position-container,
+.member-name-position,
+.position-description {
+  font-family: 'Roboto', sans-serif;
+  text-align: center;
+}
+
+/* If necessary, you can use the following for additional padding control */
+.member-container {
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
+/* Our Portfolio Section */
 .our-portfolio {
-  padding-top: 120px;
-  padding-bottom: 120px;
+  padding: 120px 0;
 }
 
 .portfolio-title {
@@ -234,32 +283,54 @@ img {
 
 .portfolio-list {
   display: flex;
+  gap: 24px;
   flex-wrap: wrap;
-  column-gap: 24px;
-  row-gap: 48px;
 }
 
 .portfolio-item {
-  width: calc((100% - 48px) / 3);
+  width: calc((100% - 48px) / 3); /* Ширина для елемента списку з урахуванням відступів */
 }
 
-.portfolio-container {
+.portfolio-item .portfolio-container {
+  padding: 32px 16px;
+  border: 1px solid #e7e9fc; /* Обводка по периметру */
+  border-top: none; /* Без обводки на верхньому краї */
+}
+
+.portfolio-container h3 {
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 8px; /* Відступ між заголовком та параграфом */
+  text-align: center;
+}
+
+.portfolio-container p {
+  font-size: 16px;
+  color: #7c7f8b;
+  text-align: center;
+}
+
+/* Загальні стилі для усіх пунктів списку */
+.portfolio-item .portfolio-container,
+.portfolio-item h3,
+.portfolio-item p {
   padding: 32px 16px;
   border: 1px solid #e7e9fc;
   border-top: none;
   text-align: center;
 }
 
-.app-title {
+.portfolio-item .portfolio-container h3 {
   font-size: 24px;
   font-weight: 600;
   margin-bottom: 8px;
 }
 
-.app-category {
+.portfolio-item .portfolio-container p {
   font-size: 16px;
   color: #7c7f8b;
 }
+
 
 /* Footer */
 .footer {
@@ -280,4 +351,11 @@ img {
   margin: 0 auto;
   font-size: 14px;
   color: #7c7f8b;
+}
+.footer-paragraph {
+  max-width: 264px;
+  margin: 0 auto 32px; /* Центруємо параграф і додаємо відступ знизу */
+  font-size: 16px;
+  color: #7c7f8b;
+  text-align: center;
 }
