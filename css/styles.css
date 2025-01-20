@@ -7,6 +7,8 @@ body {
   font-weight: 400;
   line-height: 1.5;
   letter-spacing: 0.02em;
+  margin: 0;
+  padding: 0;
 }
 
 ul {
@@ -24,64 +26,11 @@ button {
   line-height: 1.5;
   letter-spacing: 0.04em;
 }
+
 img {
   display: block;
-  width: 100%; /* Це необов'язково, додається для забезпечення адаптивності */
-  height: auto; /* Зберігає пропорції зображення */
-}
-
-/* Header */
-.logo {
-  color: #4d5ae5;
-  font-family: "Raleway", sans-serif;
-  font-size: 18px;
-  font-weight: 700;
-  line-height: 1.17;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-}
-
-.logo-accent {
-  color: #2e2f42;
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 1.17;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-}
-
-.header-nav {
-  
-}
-
-.header-link {
-  color: #2e2f42;
-  font-weight: 500;
-  letter-spacing: 0.02em;
-}
-
-.header-link:hover,
-.header-link:focus {
-  color: #404bbf;
-}
-
-address {
-  font-style: normal;
-}
-
-.contact-info {
-  font-style: normal;
-}
-
-.contact-link {
-  color: #434455;
-  font-style: normal;
-  letter-spacing: 0.02em;
-}
-
-.contact-link:hover,
-.contact-link:focus {
-  color: #404bbf;
+  width: 100%;
+  height: auto;
 }
 
 /* Header */
@@ -89,17 +38,15 @@ address {
   border-bottom: 1px solid #e7e9fc;
 }
 
-/* Контейнер хедера */
 .header-container {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 1158px;
+  max-width: 1158px;
   margin: 0 auto;
   padding: 0 15px;
 }
 
-/* Логотип */
 .header-logo {
   color: #4d5ae5;
   font-family: "Raleway", sans-serif;
@@ -114,7 +61,6 @@ address {
   color: #2e2f42;
 }
 
-/* Навігація */
 .header-nav {
   display: flex;
   align-items: center;
@@ -137,7 +83,6 @@ address {
   color: #404bbf;
 }
 
-/* Контактна інформація */
 .contact-info {
   font-style: normal;
 }
@@ -157,39 +102,36 @@ address {
   color: #404bbf;
 }
 
-/* Секція */
+/* Main Section */
 .main-section {
   padding: 188px 0;
 }
 
-/* Контейнер секції */
 .container {
   width: 100%;
-  max-width: 1158px; /* Опційно, якщо потрібно обмежити ширину контейнера */
+  max-width: 1158px;
   margin: 0 auto;
   padding: 0 15px;
 }
 
-/* Заголовок */
 .section-title {
   font-size: 36px;
   font-weight: 700;
   color: #2e2f42;
   max-width: 496px;
-  margin-bottom: 40px; /* Відступ під заголовком */
+  margin-bottom: 40px;
   text-align: center;
 }
 
-/* Кнопка */
 .cta-button {
   display: block;
   min-width: 169px;
   height: 56px;
   border: none;
-  background-color: var(--primary-color, #4d5ae5); /* Використання змінної */
+  background-color: #4d5ae5;
   border-radius: 4px;
   cursor: pointer;
-  margin: 0 auto; /* Центрування кнопки */
+  margin: 0 auto;
   color: white;
   font-size: 16px;
   text-align: center;
@@ -199,22 +141,14 @@ address {
 
 .cta-button:hover,
 .cta-button:focus {
-  background-color: #404bbf; /* Зміна кольору при наведенні */
+  background-color: #404bbf;
 }
-/* Секція */
+
+/* Advantages Section */
 .our-advantages {
   padding: 120px 0;
 }
 
-/* Контейнер секції */
-.container {
-  width: 100%;
-  max-width: 1158px;
-  margin: 0 auto;
-  padding: 0 15px;
-}
-
-/* Заголовок, прихований для доступності */
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -226,45 +160,32 @@ address {
   overflow: hidden;
 }
 
-/* Список переваг */
 .advantages-list {
   display: flex;
   gap: 24px;
-  flex-wrap: wrap; /* Дозволяє елементам переноситися на новий рядок */
+  flex-wrap: wrap;
 }
 
-/* Елемент списку */
 .advantage-item {
-  width: calc((100% - 72px) / 4); /* Ширина кожного елементу списку */
+  width: calc((100% - 72px) / 4);
 }
 
-/* Заголовок переваги */
 .advantage-title {
   font-size: 24px;
   font-weight: 600;
   margin-bottom: 8px;
 }
 
-/* Опис переваги */
 .advantage-description {
   font-size: 16px;
   color: #7c7f8b;
 }
 
-/* Секція */
+/* Team Section */
 .our-team {
   padding: 120px 0;
 }
 
-/* Контейнер секції */
-.container {
-  width: 100%;
-  max-width: 1158px;
-  margin: 0 auto;
-  padding: 0 15px;
-}
-
-/* Заголовок секції */
 .our-team-title {
   font-size: 36px;
   font-weight: 700;
@@ -272,53 +193,38 @@ address {
   text-align: center;
 }
 
-/* Список членів команди */
 .team-list {
   display: flex;
   gap: 24px;
-  flex-wrap: wrap; /* Дозволяє елементам переноситися на новий рядок */
+  flex-wrap: wrap;
 }
 
-/* Елемент списку */
 .team-item {
-  width: calc((100% - 72px) / 4); /* Ширина кожного елементу списку */
-  border-radius: 0px 0px 4px 4px;
+  width: calc((100% - 72px) / 4);
 }
 
-/* Контейнер для кожного члена команди */
 .team-member {
   padding: 32px 0;
   text-align: center;
 }
 
-/* Ім'я члена команди */
 .member-name {
   font-size: 24px;
   font-weight: 600;
   margin-bottom: 8px;
 }
 
-/* Посада члена команди */
 .member-position {
   font-size: 16px;
   color: #7c7f8b;
 }
 
-/* Секція */
+/* Portfolio Section */
 .our-portfolio {
   padding-top: 120px;
   padding-bottom: 120px;
 }
 
-/* Контейнер секції */
-.container {
-  width: 100%;
-  max-width: 1158px;
-  margin: 0 auto;
-  padding: 0 15px;
-}
-
-/* Заголовок секції */
 .portfolio-title {
   font-size: 36px;
   font-weight: 700;
@@ -326,7 +232,6 @@ address {
   text-align: center;
 }
 
-/* Список портфоліо */
 .portfolio-list {
   display: flex;
   flex-wrap: wrap;
@@ -334,12 +239,10 @@ address {
   row-gap: 48px;
 }
 
-/* Елемент списку */
 .portfolio-item {
-  width: calc((100% - 48px) / 3); /* Ширина кожного елементу списку */
+  width: calc((100% - 48px) / 3);
 }
 
-/* Контейнер для назви та категорії додатку */
 .portfolio-container {
   padding: 32px 16px;
   border: 1px solid #e7e9fc;
@@ -347,34 +250,23 @@ address {
   text-align: center;
 }
 
-/* Заголовок в контейнері */
 .app-title {
   font-size: 24px;
   font-weight: 600;
   margin-bottom: 8px;
 }
 
-/* Категорія додатку */
 .app-category {
   font-size: 16px;
   color: #7c7f8b;
 }
-/* Футер */
+
+/* Footer */
 .footer {
   padding-top: 100px;
   padding-bottom: 100px;
 }
 
-/* Контейнер футера */
-.container {
-  width: 100%;
-  max-width: 1158px;
-  margin: 0 auto;
-  padding: 0 15px;
-  text-align: center;
-}
-
-/* Посилання в футері */
 .footer-link {
   display: inline-block;
   margin-bottom: 16px;
@@ -383,7 +275,6 @@ address {
   font-size: 16px;
 }
 
-/* Параграф в футері */
 .footer-text {
   max-width: 264px;
   margin: 0 auto;
