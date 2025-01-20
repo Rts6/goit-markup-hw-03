@@ -79,31 +79,78 @@ address {
   color: #404bbf;
 }
 
-/* Hero section */
-.hero-section {
-  background-color: #2e2f42;
+/* Header */
+.header {
+  border-bottom: 1px solid #e7e9fc;
 }
 
-.hero-title {
-  color: #ffffff;
-  text-align: center;
-  font-size: 56px;
-  line-height: 1.07;
+/* Контейнер хедера */
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 1158px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+/* Логотип */
+.header-logo {
+  color: #4d5ae5;
+  font-family: "Raleway", sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  margin-right: 76px;
+}
+
+.logo-accent {
+  color: #2e2f42;
+}
+
+/* Навігація */
+.header-nav {
+  display: flex;
+  align-items: center;
+}
+
+.header-menu {
+  display: flex;
+  gap: 40px;
+}
+
+.header-link {
+  color: #2e2f42;
+  font-weight: 500;
+  padding: 24px 0;
   letter-spacing: 0.02em;
 }
 
-.button {
-  margin: auto;
-  background-color: #4d5ae5;
-  color: #ffffff;
-  border: none;
+.header-link:hover,
+.header-link:focus {
+  color: #404bbf;
 }
 
-.button:hover,
-.button:focus {
-  background-color: #404bbf;
+/* Контактна інформація */
+.contact-info {
+  font-style: normal;
 }
 
+.contact-list {
+  display: flex;
+  gap: 40px;
+}
+
+.contact-link {
+  color: #434455;
+  letter-spacing: 0.02em;
+}
+
+.contact-link:hover,
+.contact-link:focus {
+  color: #404bbf;
+}
 /* Our Advantages */
 .advantage-section {}
 
