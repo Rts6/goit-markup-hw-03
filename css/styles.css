@@ -206,51 +206,41 @@ ul {
 
 
 /* Секція */
-.our-team {
-  padding: 64px 0;
-  background-color: #f9f9f9;
+.team {
+  padding: 120px 0;
 }
 
-.our-team-title {
+.team-title {
+  margin-bottom: 72px;
   text-align: center;
-  font-size: 32px;
-  margin-bottom: 40px;
 }
 
-/* Список команди */
 .team-list {
+  display: flex;
+  gap: 24px;
   list-style: none;
   padding: 0;
   margin: 0;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 32px;
 }
 
-/* Елементи списку */
 .team-item {
-  text-align: center;
+  flex-basis: calc((100% - 3 * 24px) / 4);
+  border-radius: 0 0 4px 4px;
 }
 
-/* Контейнер для імені та посади */
-.team-member-container {
+.team-member {
   padding: 32px 0;
+  text-align: center;
 }
 
-/* Заголовок з ім'ям */
 .member-name {
-  font-size: 20px;
-  font-weight: bold;
-  text-align: center;
   margin-bottom: 8px;
 }
 
-/* Позиція працівника */
 .member-position {
-  font-size: 16px;
-  color: #777;
-  text-align: center;
+  margin: 0;
 }
+
 
 
 /* Список */
